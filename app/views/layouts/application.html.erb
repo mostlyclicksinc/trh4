@@ -1,14 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Trh4</title>
+  <title>Thunder Road Hobbies <%= page_title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <!-- link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" -->
+        <!-- link href="tr.css" rel="stylesheet" media="screen" -->
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 
-<%= yield %>
+	<!-- Banner -->
+	<div class="row-fluid blue-gradient">
+		<div class="container logo-header">
+			<div class="row">
+  				<%= link_to (image_tag 'logo3.png'), '/' %>
+  				<div class="span6 pull-right" style="text-align:right;">
+  					<h3>309-762-5295</h3>
+  					<h5><a class="email-address" href="mailto:info@thunderroadhobbies.com">info@thunderroadhobbies.com</a></h5>	
+		  			<div>
+						<a href="/location">
+							<h5>6411 61st Street (Off Airport Road)</h5>	
+			  				<h5>Moline, Illinois  61265</h5>
+						</a>
+					</div>
+  				</div>
+  			</div>
+  		</div>
+	</div>
+
+	<!-- Navigation Bar -->
+	<div class="row-fluid black">
+		<div class="container">
+			<div class="navbar navbar-inverse" style="text-align:center;">
+				<div class="navbar-inner " >
+					<ul class="nav" >
+						<li><a href="/">HOME</a></li>
+						<li><a href="/airplanes_helis">AIRPLANES/HELIS</a></li>
+						<li><a href="/cars">RC CARS</a></li>
+						<li><a href="/trains">MODEL RAILROAD</a></li>
+						<li><a href="/racing">RC RACING/TRACKS</a></li>
+						<li><a href="http://s3.excoboard.com/Thunder_Road_Hobbies" target="_blank">FORUM</a></li>
+						<li><a href="/clubs">CLUBS</a></li>
+						<li><a href="/location">LOCATION</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Main Container -->
+	<div class="container">
+		<div class="row-fluid">
+			<!-- Left Side -->
+			<div class="row-fluid">
+				<div class="span3">
+					<h3>Hours</h3>
+					<ul class="unstyled">
+						<li>Monday: 12 - 7</li>
+						<li>Tuesday: 12 - 7</li>
+						<li>Wednesday: closed</li>
+						<li>Thursday: 12 - 7</li>
+						<li>Friday: 12 - 7</li>
+						<li>Saturday: 10 - 6</li>
+						<li>Sunday: 12 - 4</li>
+					</ul>
+				</div>
+
+				<!-- Center -->
+				<%= yield %>
+
+				<!-- Right Side -->
+				<div class="span3">
+					<a href="http://www.facebook.com/thunder.hobbies"><%= image_tag "facebookimage.jpg"  %></a>
+					<h4>Events:</h4>
+					<ul>
+						<li>Sunday April 14th, 2013
+							<ul>
+								<li>First Race of Outdoor Season</li>
+								<li>Racing every Sunday unless noted below</li>
+							</ul>
+						</li>
+						<li>Summer Series
+							<ul>
+								<li>Round 1 Sunday May 5th</li>
+								<li>Round 2 Sunday June 9th</li>
+								<li>Round 3 Sunday July 21st</li>
+								<li>Round 4 Sunday August 18th</li>
+								<li>Finals Sunday September 15th</li>
+							</ul>
+						</li>
+						<li><a href="http://midwestnitro.com/Midwest_Nitro_Series.php">Midwest Nitro Series, Round 3</a>
+							<ul>
+								<li>Saturday July 13th</li>
+								<li>Rain Date: Saturday July 20th</li>
+							</ul>
+						</li>
+						<li><a href="http://midwestnitro.com/Midwest_Electric_Series.php">Midwest Electric Series, Round 4</a>
+							<ul>
+								<li>Saturday August 24th</li>
+								<li>Rain Date: Saturday August 31st</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row-fluid">
+		<div class="container">
+			<di></di>
+		</div>
+	</div>
+
+<!-- put script code as low as possible -->
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+
+window.onload = function() {
+	
+}
+
+
+/*	
+$(document).ready(function() {
+	
+   $(".nav li").click(function() {
+     $(this).siblings().removeClass("active");    
+     $(this).addClass("active");
+	return true;
+   });
+
+});
+
+function clickNav( clickedTab ) {
+	debugger;
+	clickedTab.siblings().removeClass("active");    
+    clickedTab.addClass("active");
+}
+*/
+</script>
 
 </body>
 </html>
